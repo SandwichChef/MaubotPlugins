@@ -7,7 +7,7 @@ maubot: 0.1.0
 database: false
 config: false
 webapp: false
-license: MIT
+license: AGPL 3.0
 extra_files: []
 dependencies: []
 soft_dependencies: []
