@@ -1,0 +1,13 @@
+id: gallant.maubot.host
+version: 0.0.9
+modules:
+- host
+main_class: HostBot
+maubot: 0.1.0
+database: false
+config: false
+webapp: false
+license: MIT
+extra_files: []
+dependencies: []
+soft_dependencies: []
