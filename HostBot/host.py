@@ -36,7 +36,7 @@ class HostBot(Plugin):
     async def _reupload(self, message: str) -> Optional[MediaMessageEventContent]:
         url = message
         self.log.info(f"Reuploading {url}")
-        resp = await self.http.get(url)
+        resp = await self.http.get(url, headers={"Referer": url})
         data = await resp.read()
         img = Image.open(BytesIO(data))
         width, height = img.size
